@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Bank</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <!--Login Section-->
+  <section class="container" id="login-area">
+    <h1>Welcome To AR Bank</h1>
+    <section class="lgn-box">
+      <h3>Login</h3>
+      <input type="email" name="Email" id="email" placeholder="Insert your email or user name" class="input">
+      <input type="password" name="Password" id="password" placeholder="Password" class="input">
+      <button type="button" id="login-btn" class="lgn-btn">Enter</button>
+    </section>
+  </section>
+
+  <!--Bank Section-->
+  <section class="container bank-area" id="bank-area">
+
+    <!--Status Container-->
+    <section class="stts-container">
+      <section class="stts color-1">
+        <h2>Deposit</h2>
+        <h3>$ <span id="current-deposit">0</span></h3>
+      </section>
+      <section class="stts color-2">
+        <h2>Withdraw</h2>
+        <h3>$ <span id="current-withdraw">0</span></h3>
+      </section>
+      <section class="stts color-3">
+        <h2>Balance</h2>
+        <h3>$ <span id="current-balance">1200</span></h3>
+      </section>
+    </section>
+
+    <!--input output container-->
+    <section class="blnc-input-output-container">
+      <section class="input-output-box">
+        <h3>Deposit</h3>
+        <input type="number" name="Deposit" id="deposit-amount" placeholder="$ amount you want to deposit" class="input">
+        <button type="button" id="deposit-btn" class="lgn-btn">Deposit</button>
+      </section>
+      <section class="input-output-box">
+        <h3>Withdraw</h3>
+        <input type="number" name="Withdraw" id="withdraw-amount" placeholder="$ amount you want to withdraw" class="input">
+        <button type="button" id="withdraw-btn" class="lgn-btn">Withdraw</button>
+      </section>
+    </section>
+  </section>
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
