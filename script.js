@@ -37,9 +37,15 @@ withdrawBtn.addEventListener ("click", function () {
 
 //----Input Value Function ------
 function inputValue (id) {
-  const amount = document.getElementById(id).value;
-  const amountNum = parseFloat (amount);
-  return amountNum;
+  let amount = document.getElementById(id).value;
+  if (amount == "") {
+    return 0;
+  }else {
+    return parseFloat(amount);
+  }
+  // const amount = document.getElementById(id).value;
+  // const amountNum = parseFloat (amount);
+  // return amountNum;
 }
 
 //---Current Update function
